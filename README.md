@@ -9,12 +9,10 @@ This is my personal portfolio website designed to showcase my skills, projects, 
 2. [Technologies Used](#technologies-used)  
 3. [Live Demo](#live-demo)  
 4. [Installation](#installation)  
-5. [Usage](#usage)  
-6. [File Structure](#file-structure)  
-7. [Screenshots](#screenshots)  
-8. [Contributing](#contributing)  
-9. [License](#license)  
-10. [Contact](#contact)
+5. [Usage](#usage)    
+6. [Screenshots](#screenshots)  
+7. [License](#license)  
+8. [Contact](#contact)
 
 ---
 
@@ -55,3 +53,43 @@ git clone https://github.com/TechyShie/Techyshie.github.io.git
 cd portfolio
 
 # 3. (Optional) Open with Live Server or a code editor
+
+
+---
+
+## Usage
+
+Navigate through the homepage to get a quick intro.
+
+Visit the "About" section to learn more about me.
+
+Browse the "Projects" to see what I’ve worked on.
+
+Use the "Contact" form or links to reach out.
+
+
+---
+
+## Screenshots
+
+## Screenshots
+
+### Homepage
+![Homepage Screenshot](assets/screenshots/screenshot-home.png)
+
+### Skills Section
+![Skills Section](assets/screenshots/screenshot-skills.png)
+
+---
+
+## License
+
+This project is licensed by the MIT License.
+
+---
+
+## Contact
+
+Created by Susan Wanjiru
+Email: susanshie316@gmail.com
+Github: htpps://github.com/TechyShie
