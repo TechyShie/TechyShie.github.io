@@ -59,37 +59,32 @@ cd portfolio
 
 ## Usage
 
-Navigate through the homepage to get a quick intro.
-
-Visit the "About" section to learn more about me.
-
-Browse the "Projects" to see what I’ve worked on.
-
-Use the "Contact" form or links to reach out.
-
+- Navigate through the **Homepage** to get a quick introduction.
+- Check out the **About Me** section to learn more about my background and journey.
+- Browse the **Projects** section to explore what I’ve built and worked on.
+- Use the **Contact** section to get in touch or collaborate.
 
 ---
 
 ## Screenshots
 
-## Screenshots
-
-### Homepage
+### Homepage  
 ![Homepage Screenshot](assets/screenshots/screenshot-home.png)
 
-### Skills Section
+### Skills Section  
 ![Skills Section](assets/screenshots/screenshot-skills.png)
 
 ---
 
 ## License
 
-This project is licensed by the MIT License.
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more details.
 
 ---
 
 ## Contact
 
-Created by Susan Wanjiru
-Email: susanshie316@gmail.com
-Github: htpps://github.com/TechyShie
+**Created by:** Susan Wanjiru  
+**Email:** [susanshie316@gmail.com](mailto:susanshie316@gmail.com)  
+**GitHub:** [https://github.com/TechyShie](https://github.com/TechyShie)
