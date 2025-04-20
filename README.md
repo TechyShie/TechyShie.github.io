@@ -71,10 +71,10 @@ cd Techyshie.github.io
 ## Screenshots
 
 ### Homepage  
-![Homepage Screenshot](assets/screenshots/screenshot-home.png)
+![Homepage Screenshot](assets/screenshots/Screenshot-home.png.pgn)
 
 ### Skills Section  
-![Skills Section](assets/screenshots/screenshot-skills.png)
+![Skills Section](assets/screenshots/screenshot-skills.png.pgn)
 
 ---
 
