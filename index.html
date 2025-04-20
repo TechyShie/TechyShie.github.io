@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section with Navigation Icons -->
+    <header class="fade-in">
+        <div class="header-left">
+            <h1>Portfolio</h1>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search..." onkeyup="searchFunction()">
+        </div>
+    </header>
+
+    <!-- Introduction Section with Background Image -->
+    <section id="background" class="background-section">
+        <div class="intro-text">
+            <p>Hello, I'm</p>
+            <h2>SUSAN WANJIRU</h2>
+            <p class="profession">Web Designer / Software Developer</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="fade-in-section">
+        <h2>About Me</h2>
+        <p>I am a self-driven and passionate computer science student with an open mind and an insatiable curiosity for learning. I thrive on exploring the ever-evolving world of technology, constantly seeking to expand my skills and knowledge. My determination and readiness to face challenges head-on have been the cornerstone of my growth, both academically and personally.</p>
+        <p>As a collaborative team player, I excel in teamwork-based projects, where I bring not only my technical expertise but also a positive and solution-oriented mindset. My ability to communicate effectively and think creatively allows me to contribute meaningfully to achieving shared goals. I view every challenge as an opportunity for growth, embracing them with a spirit of perseverance and innovation.</p>
+        <p>Whether working independently or as part of a team, I am dedicated to producing results that reflect my commitment to excellence and my passion for technology.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="slide-in-skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <!-- Top Row -->
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="skill">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-git"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-cuttlefish"></i>
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in-section">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Portfolio Website:</strong> Designed a website using HTML, CSS, and JavaScript.</li>
+            <li><strong>Database System:</strong> Created a student database using MySQL.</li>
+            <li><strong>LAN Setup:</strong> Configured a network for a computer lab.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in-section">
+        <h2>Contact Me</h2>
+        <p>Email: wanjirususan3922@gmail.com</p>
+        <p>Phone: 0768361502</p>
+        <!-- Download CV Button -->
+        <a href="susan-cv.pdf" class="download-btn" download>Download My CV</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Susan Wanjiru. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Search Functionality
+        function searchFunction() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                let content = section.textContent || section.innerText;
+                if (content.toLowerCase().indexOf(input) > -1) {
+                    section.style.display = "block"; // Show section
+                } else {
+                    section.style.display = "none"; // Hide section
+                }
+            });
+        }
+
+        // Scroll-based Animation Trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return rect.top >= 0 && rect.bottom <= window.innerHeight;
+            }
+
+            // Apply animations when sections are in the viewport
+            const sections = document.querySelectorAll('.fade-in-section');
+            const skillSections = document.querySelectorAll('.skill');
+
+            function handleScroll() {
+                // Loop through each section and add animation class when in viewport
+                sections.forEach(function(section) {
+                    if (isInViewport(section)) {
+                        section.classList.add('animate');
+                    }
+                });
+
+                skillSections.forEach(function(skill) {
+                    if (isInViewport(skill)) {
+                        skill.classList.add('animate');
+                    }
+                });
+            }
+
+            // Listen for scroll events to trigger the animations
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // Call immediately to handle elements already in view on page load
+        });
+    </script>
+</body>
+</html>
